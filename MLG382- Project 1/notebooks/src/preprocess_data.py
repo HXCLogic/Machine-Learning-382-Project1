@@ -1,9 +1,6 @@
 import numpy as np
 import pandas as pd
 
-
-
-
 def preprocess(df: pd.DataFrame):
     # Remove rows with missing values
     df.dropna(subset=['Gender', 'Dependents', 'LoanAmount', 'Loan_Amount_Term'], inplace=True)
