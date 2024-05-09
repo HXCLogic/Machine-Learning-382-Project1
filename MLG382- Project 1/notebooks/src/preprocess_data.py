@@ -40,19 +40,4 @@ def preprocess(df: pd.DataFrame):
     # Filter out the outliers from the dataframe
     df = df[mask_ApplicantIncome & mask_CoapplicantIncome & mask_LoanAmount1 & mask_LoanAmount2 & mask_Loan_Amount_Term]
 
-    # Scale the numerical features
-    cols = ['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount', 'Loan_Amount_Term']
-
-    from sklearn.preprocessing import StandardScaler
-    ss = StandardScaler()
-    df[cols] = ss.fit_transform(df[cols])
-
-    # Splitting the dataset into the Training set and Test set
-    from sklearn.model_selection import train_test_split
-
-    X = df.drop(columns=['Loan_Status'], inplace=False)
-    y = df['Loan_Status']
-
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
-
-    return X_train, X_test, y_train, y_test
+    return df
