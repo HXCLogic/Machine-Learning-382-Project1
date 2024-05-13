@@ -7,6 +7,6 @@ def prepare(path: str):
     df = pd.read_csv(f'../data/{path}')
 
     # Remove irrelevant columns
-    df.drop(columns='EmployeeID', inplace=True)
+    df.drop(columns='Loan_ID', inplace=True)
 
     return df
