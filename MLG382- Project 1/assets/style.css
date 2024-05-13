@@ -1,0 +1,26 @@
+/* .custom-div {     
+    background-color: #f0f8ff;    
+    padding: 20px;     
+    border-radius: 8px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);     
+    font-family: Arial, sans-serif;     
+    max-width: 600px;     
+    margin: auto; 
+} 
+
+.custom-div h1 {     
+    color: #333333;     
+    text-align: center;
+}
+
+.custom-div div {     
+    color: #666666;     
+    font-size: 16px;     
+    text-align: justify;     
+    margin-top: 20px; 
+} */
+
+label {
+    color: red;
+    font-size: 20px;
+}
